@@ -5,3 +5,7 @@ fitness_threshold     = 100
 pop_size              = 20
 reset_on_extinction   = False
 
+
+[DefaultReproduction]
+elitism            = 2
+survival_threshold = 0.2
