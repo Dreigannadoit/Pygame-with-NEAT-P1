@@ -1,8 +1,6 @@
 import pygame
-import neat
-import time
 import os
-import random
+pygame.font.init()
 
 
 WIN_WIDTH = 500
@@ -16,3 +14,9 @@ BIRD_IMGS = [
 PIPE_IMG =  pygame.transform.scale2x( pygame.image.load( os.path.join( "imgs", "pipe.png" )))
 BASE_IMG =  pygame.transform.scale2x( pygame.image.load( os.path.join( "imgs", "base.png" )))
 BG_IMG =  pygame.transform.scale2x( pygame.image.load( os.path.join( "imgs", "bg.png" )))
+
+STAT_FONT = pygame.font.SysFont("8-BIT_WONDER.TTF", 50)
+
+PIPE_DISTANCE = 600
+FLOOR_POS = 730
+FPS = 30
