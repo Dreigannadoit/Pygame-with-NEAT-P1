@@ -6,6 +6,7 @@ pygame.font.init()
 WIN_WIDTH = 500
 WIN_HEIGHT = 800
 
+GEN = 0
 BIRD_IMGS = [ 
     pygame.transform.scale2x( pygame.image.load( os.path.join( "imgs", "bird1.png" ))),
     pygame.transform.scale2x( pygame.image.load( os.path.join( "imgs", "bird2.png" ))),

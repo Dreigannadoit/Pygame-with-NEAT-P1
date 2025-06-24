@@ -8,11 +8,12 @@ from constants import PIPE_IMG
 
 class Pipe:
     GAP = 200
-    VEL = 5
+    BASE_VEL = 10
 
     def __init__(self, x):
         self.x = x
         self.height = 0
+        self.VEL = self.BASE_VEL 
 
         self.top = 0
         self.bottom = 0
@@ -31,6 +32,10 @@ class Pipe:
 
     def move(self):
         self.x -= self.VEL
+    
+    @classmethod
+    def increase_velocity(cls, increment):
+        cls.BASE_VEL += increment
 
     def draw(self, win):
         win.blit( self.PIPE_TOP, ( self.x, self.top ) )

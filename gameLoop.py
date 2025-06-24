@@ -74,3 +74,6 @@ class GameLoop:
             self.draw_window()
 
         pygame.quit()
+
+    def run():
+        pass

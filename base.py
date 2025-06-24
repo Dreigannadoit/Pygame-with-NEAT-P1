@@ -7,7 +7,7 @@ import random
 from constants import BASE_IMG
 
 class Base:
-    VEL = 5 # velociy must be the same as pipe
+    VEL = 10 # velociy must be the same as pipe
     WIDTH = BASE_IMG.get_width()
     IMG = BASE_IMG
 
