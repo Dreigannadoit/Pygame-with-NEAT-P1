@@ -146,8 +146,6 @@ def run(config_path):
 
     p = neat.Population(config)
 
-    
-
     p.add_reporter( neat.StdOutReporter(True) )
     stats = neat.StatisticsReporter()
     p.add_reporter(stats)
